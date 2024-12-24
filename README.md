@@ -13,8 +13,7 @@ A continuación se detallan los pasos para configurar y poner en marcha la aplic
 Primero, clona el repositorio de GitHub en tu máquina local:
 
 ```bash
-git clone https://github.com/Marinolb/ud3.2_ejercicios.git  
-cd ud3_ejercicios
+git clone https://github.com/marinolb/ud3.2_ejercicios.git  
 ``` 
 
 ### 2. Configuraciones Previas
@@ -32,7 +31,7 @@ DB_PASSWORD=m1_s3cr3t
 
 ### 3. Levantar los contenedores con Docker Compose
 
-Ejecuta el siguiente comando para levantar tanto la base de datos como la aplicación Laravel en contenedores:
+Ejecuta el siguiente comando para levantar tanto la base de datos como la aplicación Laravel en contenedores (asegurate de estar en el directorio ud3.2_ejercicios) :
 
 ```bash
 docker-compose up --build
@@ -51,7 +50,7 @@ php artisan migrate
 
 ### 5. Cargar datos de prueba
 
-Si tienes seeders configurados, puedes ejecutar el siguiente comando para insertar datos de prueba en la base de datos:
+Para insertar los datos de prueba configurados en los seeders, ejecuta el siguiente comando:
 
 ```bash
 php artisan db:seed
